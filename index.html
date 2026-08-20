@@ -3,59 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Learning</title>
+    <title>Clean Learning — Aprenda a programar de verdade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    s
 </head>
 <body>
+
+    
+
     <header>
         <nav>
             <div class="nav-clean-img">
-
-                <a href="">
-
-                    <svg> </svg>
-
+                <a href="#" class="logo">
+    
+                    <span>Clean Learning</span>
                 </a>
-
             </div>
+
             <div class="nav-content">
-            <ul class="nav-list">
-                <li class="nav-list-item"> OI </li>
-                <li class="nav-list-item"> OI </li>
-                <li class="nav-list-item"> OI </li>
-                <li class="nav-list-item"> OI </li>
-            </ul>
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#trilhas">Trilhas</a></li>
+                    <li class="nav-list-item"><a href="#codigo">Pratique</a></li>
+                    <li class="nav-list-item"><a href="#comunidade">Comunidade</a></li>
+                    <li class="nav-list-item"><a href="#planos">Planos</a></li>
+                </ul>
             </div>
 
-            <div class = "nav-clean-btn">
-                <button class="btn-action" id="btn-action-1" type="button"> Logar </button>
-                <button class="btn-action" id="btn-action-2" type="button"> Entrar </button>
+            <div class="nav-clean-btn">
+                <button class="btn-action" id="btn-action-1" type="button">Entrar</button>
+                <button class="btn-action btn-primary" id="btn-action-2" type="button">Começar grátis</button>
             </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
 
     <main>
+        <div class="home-container-color">
         <div class="home-container">
-            <section class="home-header">   
+
+            <section class="home-header">
                 <div class="home-header-content">
 
                     <div class="home-header-text">
-                        <h2>Entre no nosso mundo!</h1>
+                        <span class="eyebrow">?</span>
+                        <h1>Entre no nosso mundo!</h1>
+                        <p class="home-header-info">Aprenda a programar direto do celular ou do navegador, em módulos curtos que cabem no seu dia — sem enrolação, sem pré-requisitos.</p>
+
+                        <div class="home-header-actions">
+                            <button class="btn-cta">Criar conta grátis</button>
+                            <button class="btn-ghost">Ver trilhas ▸</button>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="hero-stat"><strong>2.4M</strong><span>alunos ativos</span></div>
+                            <div class="hero-stat"><strong>40+</strong><span>trilhas de código</span></div>
+                            <div class="hero-stat"><strong>4.8</strong><span>avaliação média</span></div>
+                        </div>
                     </div>
 
-                    <div class = "home-header-info">
-                        <p>Ele é incrivel!</p>
+                    <div class="home-header-image">
+                        <div class="code-window" id="code-window" aria-hidden="true">
+                            <div class="code-window-bar">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <pre class="code-window-body"><code id="typed-code"></code><span class="cursor">▍</span></pre>
+                        </div>
                     </div>
+
                 </div>
-
-                <div class="home-header-actions>
-                    <img src="img/undraw_education_f8ru.svg" alt="Imagem de educação">
+                </div>
             </section>
-        </div>
-    </main>
 
-    
+            
+
     <script src="script.js"></script>
 </body>
 </html>
